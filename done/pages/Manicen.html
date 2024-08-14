@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+ 	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Виртуальный стилист</title>
+		<meta name="description" content="Web-сайт, помогающий облегчить пользователям выбор нового гардероба">
+		<meta name="keywords" content="Виртуальный, стилист, гардероб, мода, стиль">
+		<meta name="title" content="Виртуальный стилист">
+		<link rel="icon" href="/img/favicon.png">
+		<meta name="og:image" content="/img/preview.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="h">
+			<div class="cont"> 
+				<div class="left"> 
+					<a href="/" class="logo"> 
+						<svg class="img"> 
+							<use xlink:href="/img/@2x/logo.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+
+				<div class="right"> 
+					<nav>
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="/pages/Manicen.php">Манекен</a></li>
+							<li><a href="#">Корзина</a></li>
+							<li><a href="#">Профиль</a></li>
+						</ul>
+					</nav>
+			
+					<button onclick="window.open('/pages/auth/index.php', '_blank');" type="button">
+						<span class="text">Выйти</span>
+					</button>	
+				</div>
+			</div>
+		</header>
+		
+		<header class="h empty"></header>
+
+		<main class="m">
+			<section class="sec11">
+				<div class="cont">
+					<div class="left">
+						<div class="wrap">
+							<div class="wrap">
+								<img src="/img/@2x/sec11-mannequin.png" alt="">
+							</div>
+
+							<div class="test">
+								<img src="/img/@2x/jacket.png" alt="" id="body" class="show">
+							</div>
+						</div>
+					</div>
+
+					<div class="right">
+						<div class="line">
+							<button id="clothes">
+								<span class="text">Одеть/Снять</span>
+							</button>
+
+							<button id="remove">
+								<span class="text">Убрать</span>
+							</button>
+						</div>
+
+						<div class="list">
+							<strong>Список одежд</strong>
+
+							<select name="choice" id="choice">
+							</select>
+
+							<textarea id="list"></textarea>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="f">
+			<div class="cont">
+				<a href="/">
+					<svg>
+						<use xlink:href="/img/@2x/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="content">
+					<div class="left">
+						<h1>Новостные рассылки</h1>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. 
+						</p>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<input type="text" id="email" name="email" placeholder="Введите E-Mail">
+
+							<button type="submit">
+								<span class="text">Подписаться</span>
+							</button>
+						</form>
+
+						<button>
+							<span class="text">Скачать мобильное приложение (Android)</span>
+						</button>
+					</div>
+
+					<div class="right">
+						<h1>Обратная связь</h1>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<div class="first">
+								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+							</div>
+
+							<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+							<div class="last">
+								<input type="text" id="email" name="email" placeholder="E-Mail">
+
+								<button>
+									<span class="text">Отправить</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<strong>&copy; «Виртуальный стилист», 2022</strong>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</body>
+</html>

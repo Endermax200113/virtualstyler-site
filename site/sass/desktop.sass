@@ -1,0 +1,2019 @@
+*
+	margin: 0px
+	padding: 0px
+
+body
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	font-family: "Roboto", sans-serif
+
+.cont
+	display: flex
+	justify-content: space-between
+	width: 1166px
+	height: 100%
+	align-items: center
+
+.h
+	position: fixed
+	width: 100%
+	height: 80px
+	background-color: #AF3735
+	display: flex
+	flex-direction: row //По горизонтааили
+	justify-content: center //По центру вертикали всех элементов
+	align-items: center //По центру горизонтали всех элементов
+	z-index: 9999
+	transition: background-color .3s ease
+
+	&.video
+		background-color: #000c
+
+	&.empty
+		position: relative
+		z-index: -9999
+		&.video
+			display: none
+	& > .cont
+
+		& > .left
+			height: 60px
+			width: 208px
+
+			& > .logo
+				height: 100%
+				width: 100%
+				outline: none
+
+				& > .img
+					fill: #fff
+					height: 100%
+					width: 100%
+
+
+		& > .right
+			display: flex
+			height: 100%
+			align-items: center
+			justify-content: space-between
+			flex-direction: row
+			
+			& > nav
+				
+				& > ul
+					display: flex
+					list-style: none
+					
+					& > li
+						margin-left: 35px
+						
+						& > a
+							color: #fff
+							text-decoration: none
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							text-transform: uppercase
+							outline: none
+			
+			& > button		
+				margin-left: 35px		
+				display: flex
+				flex-direction: column
+				height: 43px				
+				background-color: #d6d6d6
+				border: none
+				border-radius: 5px
+				width: 110px
+				cursor: pointer
+				outline: none
+
+				& > .text
+					font-family: "MusticaPro", sans-serif
+					font-size: 18px
+					font-weight: 600
+					text-transform: uppercase
+					height: 40px
+					background-color: #fff
+					border-radius: 5px
+					width: 100%
+					display: flex
+					align-items: center
+					flex-direction: row
+					justify-content: center
+					transition: margin-top .3s ease
+
+				&:active > .text
+					margin-top: 3px
+
+//Не трогать
+.m
+	width: 100%
+	background-color: #0fa
+
+.sec1
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: flex-end
+
+	& > .bg
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: #000
+		z-index: 1
+
+		& > .defender
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: #0000
+			z-index: 3
+
+		& > video
+			width: 100%
+			height: 100%
+			opacity: .3
+			object-fit: cover
+			z-index: 2
+
+	& > .cont
+		position: relative
+		height: calc(100vh - 80px)
+		z-index: 4
+
+		& > .left
+			width: 64px
+			height: 117px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .right
+			width: 64px
+			height: 117px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .center
+			width: 916px
+			height: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			
+			& > strong
+				width: 100%
+				margin-top: 65px
+				color: #fff
+				text-align: center
+				font-family: "MyriadPro", sans-serif
+				font-size: 72px
+				text-transform: uppercase
+				font-weight: 700
+				letter-spacing: 5px
+
+			& > .bottom
+
+				& > p
+					width: 100%
+					margin-bottom: 70px
+					color: #fff
+					font-family: "MusticaPro", sans-serif
+					font-size: 24px
+					font-weight: 600
+					letter-spacing: .5px
+					line-height: 24px
+
+				& > .pages
+					margin-bottom: 25px
+					display: flex
+					height: 15px
+					justify-content: center
+
+					& > .page
+						width: 15px
+						height: 15px
+						background-color: #e1e1e1
+						border-radius: 50%
+						margin-left: 20px
+
+						&:first-child
+							margin-left: 0px
+
+						&.here
+							background-color: #AF3735
+
+.sec2
+	width: 100%
+	height: auto
+	background-color: #fff
+	display: flex
+	justify-content: center
+
+	& > .cont
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+
+		& > strong
+			margin-top: 40px
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			letter-spacing: .5px
+			font-size: 60px
+
+		& > .facts
+			width: 100%
+			height: auto
+			margin-top: 35px
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+
+			& > .block
+				width: 322px
+				height: auto
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: flex-start
+
+				& > .ava
+					min-width: 160px
+					min-height: 160px
+					display: flex
+					justify-content: center
+					align-items: center
+
+					& > svg
+						width: 100%
+						height: 100%
+						object-fit: contain
+
+						&.fact1
+							width: 160px
+							height: 88px
+
+						&.fact2
+							width: 148px
+							height: 160px
+
+						&.fact3
+							width: 74px
+							height: 160px
+
+				& > h1
+					margin-top: 40px
+					font-family: "MyriadPro", sans-serif
+					font-size: 30px
+					font-weight: 700
+					letter-spacing: .5px
+					text-transform: uppercase
+					text-align: center
+
+				& > p
+					height: auto
+					margin-top: 30px
+					margin-bottom: 50px
+					text-align: center
+					font-family: "MyriadPro", sans-serif
+					font-size: 16px
+					letter-spacing: .5px
+					font-weight: 700
+					color: #333
+					line-height: 24px
+
+.sec3
+	width: 100%
+	height: auto
+	background-color: #e1e1e1
+	display: flex
+	justify-content: center
+
+	& > .cont
+		height: auto
+
+		& > .left
+			width: 40px
+			height: 74px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .right
+			width: 40px
+			height: 74px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .center
+			width: 986px
+			height: auto
+			display: flex
+			flex-direction: column
+			align-items: center
+
+			& > .products
+				margin-top: 50px
+				width: 100%
+				height: 350px
+				display: flex
+				justify-content: space-between
+
+				& > .product
+					position: relative
+					width: 228px
+					height: 100%
+					display: flex
+					flex-direction: column
+					justify-content: flex-end
+					cursor: pointer
+
+					& > .wrap
+						position: absolute
+						width: 100%
+						height: 100%
+						z-index: 1
+
+						& > img
+							width: 100%
+							height: 100%
+							object-fit: cover
+
+					& > .details
+						background-color: #000c
+						padding-left: 15px
+						padding-bottom: 10px
+						padding-right: 15px
+						z-index: 2
+
+						& > .title
+							color: #fff
+							font-family: "MusticaPro", sans-serif
+							font-size: 24px
+							font-weight: 600
+							letter-spacing: .5px
+
+						& > .type
+							color: #fff
+							font-family: "MusticaPro", sans-serif
+							font-size: 16px
+							font-weight: 600
+							letter-spacing: .5px
+
+			& > .pages
+				margin-top: 25px
+				margin-bottom: 25px
+				display: flex
+
+				& > .page
+					width: 15px
+					height: 15px
+					margin-left: 20px
+					background-color: #9d9d9d
+					border-radius: 50%
+
+					&.here
+						background-color: #AF3735
+
+					&:first-child
+						margin-left: 0px
+
+.sec4
+	position: relative
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+
+	& > .bg
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 1
+
+		& > img
+			position: absolute
+			width: 100%
+			height: 100%
+			object-fit: cover
+			z-index: 2
+
+		& > .gradient
+			position: relative
+			width: 100%
+			height: 100%
+			opacity: .75
+			background-color: #8b413e
+			z-index: 3
+
+	& > .cont
+		position: relative
+		z-index: 10
+
+		& > .left
+			width: 40px
+			height: 74px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .right
+			width: 40px
+			height: 74px
+			cursor: pointer
+
+			& > svg
+				width: 100%
+				height: 100%
+
+		& > .center
+			width: 986px
+			height: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+
+			& > strong
+				margin-top: 20px
+				color: #fff
+				font-family: "MusticaPro", sans-serif
+				font-weight: 600
+				font-size: 60px
+
+			& > .comments
+				width: 100%
+				margin-top: 25px
+				display: flex
+				justify-content: space-between
+
+				& > .block
+					width: 295px
+					background-color: #fff
+					border-radius: 10px
+					display: flex
+					flex-direction: column
+					align-items: center
+
+					& > .ava
+						margin-top: 25px
+						width: 100px
+						height: 100px
+						
+						& > .wrap
+							width: 100%
+							height: 100%
+							display: flex
+							justify-content: center
+							align-items: center
+
+							& > img
+								width: 100%
+								height: 100%
+								border-radius: 50%
+								object-fit: cover
+
+					& > h1
+						margin-top: 15px
+						font-family: "MyriadPro", sans-serif
+						font-weight: 700
+						font-size: 20px
+						letter-spacing: .5px
+
+					& > .rates
+						margin-top: 15px
+						width: 245px
+						display: flex
+						justify-content: space-between
+
+						& > .rate
+
+							&.full
+
+								& > .full
+									display: inherit
+
+								& > .half
+									display: none
+
+								& > .null
+									display: none
+
+							&.half
+
+								& > .full
+									display: none
+
+								& > .half
+									display: inherit
+
+								& > .null
+									display: none
+
+							&.null
+
+								& > .full
+									display: none
+
+								& > .half
+									display: none
+
+								& > .null
+									display: inherit
+
+					& > p
+						margin-top: 15px
+						margin-left: 25px
+						margin-right: 25px
+						margin-bottom: 25px
+						font-family: "MyriadPro", sans-serif
+						font-weight: 400
+						font-size: 16px
+						text-align: center
+						color: #444
+
+			& > .pages
+				margin-top: 25px
+				margin-bottom: 25px
+				display: flex
+
+				& > .page
+					width: 15px
+					height: 15px
+					margin-left: 20px
+					border-radius: 50%
+					background-color: #e1e1e1
+
+					&:first-child
+						margin-left: 0px
+
+					&.here
+						background-color: #AF3735
+
+.sec5
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex: 0 0 auto
+	background-color: #e1e1e1
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	& > .err
+		margin-top: 25px
+		width: 500px
+		background-color: #AF3735
+		font-family: "MusticaPro", sans-serif
+		color: #fff
+		text-align: center
+		font-size: 20px
+		padding-top: 10px
+		padding-bottom: 10px
+
+		&.hide
+			display: none
+
+	& > form
+		background-color: #AF3735
+		width: 500px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 25px
+		margin-bottom: 100px
+
+		&.margin
+			margin-top: 70px
+		
+		& > strong
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 50px
+			margin-top: 25px
+			margin-bottom: 25px
+			color: #fff
+
+		& > input
+			margin-top: 25px
+			margin-bottom: 25px
+			width: 314px
+			height: 44px
+			border: 3px solid #230a09
+			border-radius: 10px
+			background-color: #530C0B
+			padding-left: 15px
+			padding-right: 15px
+			outline: none
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 24px
+			color: #fff
+
+			&::placeholder
+				font-family: "MusticaPro", sans-serif
+				font-weight: 600
+				font-size: 24px
+				color: #fff
+				opacity: .5
+
+		& > button
+			width: 300px
+			height: 50px
+			border: none
+			outline: none
+			background-color: #d6d6d6
+			border-radius: 5px
+			cursor: pointer
+			display: flex
+			justify-content: center
+			margin-top: 25px
+			margin-bottom: 25px
+
+
+			& > .text
+				width: 300px
+				height: 47px
+				background-color: #fff
+				border-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-family: "MusticaPro", sans-serif
+				font-size: 18px
+				font-weight: 600
+				letter-spacing: .5px
+				text-transform: uppercase
+				transition: margin-top .3s ease
+
+			&:active > .text
+				margin-top: 3px
+
+		& > a
+			font-family: "MyriadPro", sans-serif
+			font-weight: 400
+			font-size: 24px
+			color: #fff
+			letter-spacing: .5px
+			text-decoration: none
+			margin-top: 25px
+			margin-bottom: 50px
+
+.sec6
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	flex: 0 0 auto
+	background-color: #e1e1e1
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	& > .err
+		margin-top: 25px
+		width: 500px
+		background-color: #AF3735
+		font-family: "MusticaPro", sans-serif
+		color: #fff
+		text-align: center
+		font-size: 20px
+		padding-top: 10px
+		padding-bottom: 10px
+
+		&.hide
+			display: none
+
+	& > form
+		background-color: #AF3735
+		width: 500px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 25px
+		margin-bottom: 100px
+
+		&.margin
+			margin-top: 70px
+		
+		& > strong
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 50px
+			margin-top: 25px
+			margin-bottom: 25px
+			color: #fff
+
+		& > input
+			margin-top: 25px
+			margin-bottom: 25px
+			width: 314px
+			height: 44px
+			border: 3px solid #230a09
+			border-radius: 10px
+			background-color: #530C0B
+			padding-left: 15px
+			padding-right: 15px
+			outline: none
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 24px
+			color: #fff
+
+			&::placeholder
+				font-family: "MusticaPro", sans-serif
+				font-weight: 600
+				font-size: 24px
+				color: #fff
+				opacity: .5
+
+		& > button
+			width: 300px
+			height: 50px
+			border: none
+			outline: none
+			background-color: #d6d6d6
+			border-radius: 5px
+			cursor: pointer
+			display: flex
+			justify-content: center
+			margin-top: 25px
+			margin-bottom: 25px
+
+
+			& > .text
+				width: 300px
+				height: 47px
+				background-color: #fff
+				border-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-family: "MusticaPro", sans-serif
+				font-size: 18px
+				font-weight: 600
+				letter-spacing: .5px
+				text-transform: uppercase
+				transition: margin-top .3s ease
+
+			&:active > .text
+				margin-top: 3px
+
+		& > a
+			font-family: "MyriadPro", sans-serif
+			font-weight: 400
+			font-size: 24px
+			color: #fff
+			letter-spacing: .5px
+			text-decoration: none
+			margin-top: 25px
+			margin-bottom: 50px
+
+.f
+	width: 100%
+	background-color: #AF3735
+	display: flex
+	justify-content: center
+
+	& > .cont
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+		& > a
+			margin-top: 40px
+			margin-bottom: 40px
+			width: 276px
+			height: 80px
+			outline: none
+
+			& > svg
+				width: 100%
+				height: 100%
+				fill: #fff
+
+		& > .content
+			width: 100%
+			height: 300px
+			display: flex
+			justify-content: space-between
+
+			& > .left
+				width: 493px
+
+				& > h1
+					height: 40px
+					color: #fff
+					font-family: "MyriadPro", sans-serif
+					font-size: 36px
+					font-weight: 700
+					line-height: 36px
+					letter-spacing: 2.5px
+					text-transform: uppercase
+
+				& > p
+					margin-top: 25px
+					height: 105px
+					color: #fff
+					font-family: "MusticaPro", sans-serif
+					color: #dddddd
+					font-size: 18px
+					font-weight: 600
+					line-height: 24px
+					letter-spacing: .3px
+
+				& > form
+					margin-top: 25px
+					display: flex
+					justify-content: space-between
+
+					& > #email
+						width: 263px
+						height: 34px
+						padding-left: 15px
+						padding-right: 15px
+						background-color: #530C0B
+						border: 3px solid #240302
+						border-radius: 5px
+						outline: none
+						color: #fff
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+
+						&::placeholder
+							color: #fffa
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							letter-spacing: .5px
+							text-transform: uppercase
+
+					& > button
+						width: 175px
+						height: 40px
+						border: none
+						outline: none
+						background-color: #d6d6d6
+						border-radius: 5px
+						cursor: pointer
+						display: flex
+						justify-content: center
+
+						& > .text
+							width: 175px
+							height: 37px
+							background-color: #fff
+							border-radius: 5px
+							display: flex
+							justify-content: center
+							align-items: center
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							letter-spacing: .5px
+							text-transform: uppercase
+							transition: margin-top .3s ease
+
+						&:active > .text
+							margin-top: 3px
+
+				& > button
+					margin-top: 25px
+					width: 493px
+					height: 40px
+					border: none
+					outline: none
+					background-color: #d6d6d6
+					border-radius: 5px
+					cursor: pointer
+					display: flex
+					justify-content: center
+
+					& > .text
+						width: 493px
+						height: 37px
+						background-color: #fff
+						border-radius: 5px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+						text-transform: uppercase
+						transition: margin-top .3s ease
+
+					&:active > .text
+						margin-top: 3px
+
+			& > .right
+				width: 493px
+
+				& > h1
+					height: 40px
+					color: #fff
+					font-family: "MyriadPro", sans-serif
+					font-size: 36px
+					font-weight: 700
+					line-height: 36px
+					letter-spacing: 2.5px
+					text-transform: uppercase
+
+				& > form
+					margin-top: 25px
+					display: flex
+					flex-direction: column
+
+					& > .first
+						width: 100%
+						display: flex
+						justify-content: space-between
+
+						& > input
+							width: 198px
+							height: 36px
+							padding-left: 15px
+							padding-right: 15px
+							background-color: #530C0B
+							border: 3px solid #240302
+							border-radius: 5px
+							outline: none
+							color: #fff
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							letter-spacing: .5px
+
+							&::placeholder
+								color: #fffa
+								font-family: "MusticaPro", sans-serif
+								font-size: 18px
+								font-weight: 600
+								letter-spacing: .5px
+								text-transform: uppercase
+
+					& > textarea
+						margin-top: 25px
+						width: 457px
+						height: 89px
+						padding-left: 15px
+						padding-right: 15px
+						padding-top: 5px
+						padding-bottom: 5px
+						background-color: #530C0B
+						border: 3px solid #240302
+						border-radius: 5px
+						outline: none
+						color: #fff
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+						resize: none
+
+						&::placeholder
+							color: #fffa
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							letter-spacing: .5px
+							text-transform: uppercase
+
+					& > .last
+						margin-top: 25px
+						width: 100%
+						display: flex
+						justify-content: space-between
+
+						& > #email
+							width: 198px
+							height: 36px
+							padding-left: 15px
+							padding-right: 15px
+							background-color: #530C0B
+							border: 3px solid #240302
+							border-radius: 5px
+							outline: none
+							color: #fff
+							font-family: "MusticaPro", sans-serif
+							font-size: 18px
+							font-weight: 600
+							letter-spacing: .5px
+
+							&::placeholder
+								color: #fffa
+								font-family: "MusticaPro", sans-serif
+								font-size: 18px
+								font-weight: 600
+								letter-spacing: .5px
+								text-transform: uppercase
+
+						& > button
+							width: 234px
+							height: 40px
+							border: none
+							outline: none
+							background-color: #d6d6d6
+							border-radius: 5px
+							cursor: pointer
+							display: flex
+							justify-content: center
+
+							& > .text
+								width: 234px
+								height: 37px
+								background-color: #fff
+								border-radius: 5px
+								display: flex
+								justify-content: center
+								align-items: center
+								font-family: "MusticaPro", sans-serif
+								font-size: 18px
+								font-weight: 600
+								letter-spacing: .5px
+								text-transform: uppercase
+								transition: margin-top .3s ease
+
+							&:active > .text
+								margin-top: 3px
+
+
+		& > strong
+			margin-top: 50px
+			margin-bottom: 50px
+			width: 100%
+			color: #fff
+			text-align: center
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 16px
+			text-transform: uppercase
+
+.sec11
+	width: 100%
+	height: 100%
+	background-color: #e1e1e1
+	display: flex
+	justify-content: center
+
+	& > .cont
+		display: flex
+		justify-content: space-between
+		margin-top: 50px
+		margin-bottom: 50px
+
+		& > .left
+			position: relative
+			min-height: 350px
+			min-width: 350px
+			padding: 25px
+			background-color: #e1e1e1
+
+			& > .wrap
+				position: absolute
+
+				& > .wrap
+					position: absolute
+					width: 350px
+					height: 350px
+
+					& > img
+						width: 100%
+						height: 100%
+						object-fit: contain
+
+				& > .test
+					position: absolute
+					width: 350px
+					height: 300px
+
+					& > img
+						width: 100%
+						height: 100%
+						object-fit: contain
+						display: none
+
+						&.show
+							display: block
+
+		& > .right
+			background-color: #AF3735
+			height: 400px
+			width: 100%
+			margin-left: 50px
+			display: flex
+			justify-content: space-between
+
+			& > .line
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: flex-start
+
+				& > button
+					width: 200px
+					height: 40px
+					border: none
+					outline: none
+					background-color: #d6d6d6
+					border-radius: 5px
+					margin-left: 25px
+					margin-top: 25px
+					cursor: pointer
+					display: flex
+					justify-content: center
+
+					& > .text
+						width: 200px
+						height: 37px
+						background-color: #fff
+						border-radius: 5px
+						display: flex
+						justify-content: center
+						align-items: center
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+						text-transform: uppercase
+						transition: margin-top .3s ease
+
+					&:active > .text
+						margin-top: 3px
+
+			& > .list
+				margin-left: 25px
+				margin-top: 25px
+				margin-right: 25px
+				width: 100%
+				display: flex
+				flex-direction: column
+
+				& > strong
+					width: 100%
+					font-family: "MusticaPro", sans-serif
+					font-weight: 600
+					font-size: 30px
+					color: #fff
+					text-align: center
+
+				& > select
+					width: 100%
+					height: 36px
+					padding-left: 15px
+					padding-right: 15px
+					background-color: #530C0B
+					border: 3px solid #240302
+					border-radius: 5px
+					outline: none
+					margin-top: 15px
+					color: #fff
+					font-family: "MusticaPro", sans-serif
+					font-size: 18px
+					font-weight: 600
+					letter-spacing: .5px
+
+					&::placeholder
+						color: #fffa
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+						text-transform: uppercase
+
+				& > textarea
+					margin-top: 25px
+					margin-bottom: 25px
+					width: calc(100% - 36px)
+					height: 100%
+					padding-left: 15px
+					padding-right: 15px
+					padding-top: 5px
+					padding-bottom: 5px
+					background-color: #530C0B
+					border: 3px solid #240302
+					border-radius: 5px
+					outline: none
+					color: #fff
+					font-family: "MusticaPro", sans-serif
+					font-size: 18px
+					font-weight: 600
+					letter-spacing: .5px
+					resize: none
+					pointer-events: none
+
+					&::placeholder
+						color: #fffa
+						font-family: "MusticaPro", sans-serif
+						font-size: 18px
+						font-weight: 600
+						letter-spacing: .5px
+						text-transform: uppercase
+
+.sec7
+	width: 100%
+	background-color: #e1e1e1
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: flex-start
+
+	& > .cont
+		margin-top: 50px
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+		& > .blocks
+			overflow-x: hidden
+			height: 350px
+			width: 1166px
+			display: flex
+
+			& > .block
+				position: relative
+				min-width: 700px
+				height: 100%
+				margin-left: 37px
+				margin-right: 37px
+				background-color: #000
+
+				&:first-child
+					margin-left: 0px
+
+				&:last-child
+					margin-right: 0px
+
+				& > .wrap
+					position: absolute
+					opacity: .5
+					z-index: 0
+					display: flex
+					justify-content: center
+					align-items: center
+
+					& > img
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+				& > .details
+					position: relative
+					width: calc(100% - 70px)
+					height: calc(100% - 28px)
+					padding-top: 8px
+					padding-left: 35px
+					padding-right: 35px
+					padding-bottom: 20px
+					z-index: 1
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: flex-start
+
+					& > strong
+						font-family: "MusticaPro", sans-serif
+						font-weight: 600
+						font-size: 36px
+						color: #fff
+						text-transform: uppercase
+
+					& > .down
+
+						& > .discount
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 30px
+							color: #fff
+							margin-bottom: 15px
+
+
+						& > p
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 18px
+							color: #fff
+							letter-spacing: .5px
+
+		& > .arrows
+			position: absolute
+			height: 350px
+			width: 1166px
+			z-index: 6
+			margin-top: -65px
+			display: flex
+			justify-content: center
+			align-items: center
+
+			& > .wrap
+				width: 850px
+				height: 100%
+				display: flex
+				justify-content: space-between
+				align-items: center
+
+				& > .left
+					width: 40px
+					height: 74px
+					margin-left: 15px
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+
+					& > svg
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+				& > .right
+					width: 40px
+					height: 74px
+					margin-right: 15px
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+
+					& > svg
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+		& > .grad
+			position: absolute
+			height: 350px
+			width: 1166px
+			margin-top: -65px
+			z-index: 5
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			& > .left
+				width: 90px
+				height: 100%
+				background-image: linear-gradient(90deg, rgb(225,225,225) 0%, rgba(255,255,255,0) 100%)
+
+			& > .right
+				width: 90px
+				height: 100%
+				background-image: linear-gradient(-90deg, rgb(225,225,225) 0%, rgba(255,255,255,0) 100%)
+
+		& > .pages
+			position: relative
+			margin-top: 25px
+			margin-bottom: 25px
+			width: 100%
+			height: 15px
+			z-index: 7
+			display: flex
+			justify-content: center
+
+			& > .page
+				width: 15px
+				height: 15px
+				margin-left: 20px
+				background-color: #9d9d9d
+				border-radius: 50%
+
+				&.here
+					background-color: #AF3735
+
+				&:first-child
+					margin-left: 0px
+
+.sec8
+	width: 100%
+	background-color: #fff
+	display: flex
+	justify-content: center
+
+	& > .cont
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		& > strong
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 55px
+
+		& > .products
+			margin-top: 15px
+			width: 100%
+			margin-bottom: 40px
+			display: grid
+			grid-gap: 25px
+			grid-template-areas: none
+			grid-template-columns: 1fr 1fr 1fr
+
+			& > .block
+				width: 100%
+				height: 225px
+				background-color: #000
+
+				& > .bg
+					position: absolute
+					width: 372px
+					height: 225px
+					opacity: .6
+					z-index: 0
+					display: flex
+					justify-content: center
+					align-items: center
+
+					& > img
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+				& > .details
+					position: relative
+					width: 100%
+					height: 100%
+					z-index: 1
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+
+					& > .up
+						width: 100%
+						display: flex
+						justify-content: space-between
+
+						& > .left
+							width: 100%
+							margin-left: 15px
+							margin-right: 15px
+							margin-top: 10px
+
+							& > .old-price
+								font-family: "Arial", sans-serif
+								font-weight: 700
+								font-size: 18px
+								color: #fff
+								opacity: .7
+								margin-bottom: 5px
+								text-decoration-line: line-through
+
+								&.hide
+									display: none
+
+							& > .new-price
+								font-family: "Arial", sans-serif
+								font-weight: 700
+								font-size: 30px
+								color: #fff
+
+						& > .discount
+							margin-top: 15px
+							height: min-content
+							background-color: #AF3735
+							border-top-left-radius: 10px
+							border-bottom-left-radius: 10px
+
+							&.hide
+								display: none
+
+							& > .text
+								margin-top: 3px
+								margin-bottom: 1px
+								margin-left: 5px
+								margin-right: 5px
+								font-weight: "MyriadPro", sans-serif
+								font-weight: 400
+								font-size: 18px
+								color: #fff
+
+					& > .down
+						width: calc(100% - 30px)
+						margin-left: 15px
+						margin-right: 15px
+						margin-bottom: 10px
+
+						& > .title
+							font-family: "Arial", sans-serif
+							font-weight: 700
+							font-size: 20px
+							color: #fff
+
+						& > p
+							margin-top: 10px
+							font-family: "Arial", sans-serif
+							font-weight: 700
+							font-size: 14px
+							color: #fff
+							line-height: 20px
+
+.sec9
+	width: 100%
+	height: auto
+	background-color: #e1e1e1
+	display: flex
+	justify-content: center
+
+	& > .cont
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		& > strong
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 60px
+
+		& > .products
+			margin-top: 15px
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			& > .left
+				width: 40px
+				height: 74px
+				cursor: pointer
+
+				& > svg
+					width: 100%
+					height: 100%
+					object-fit: cover
+
+			& > .right
+				width: 40px
+				height: 74px
+				cursor: pointer
+
+				& > svg
+					width: 100%
+					height: 100%
+					object-fit: cover
+
+			& > .center
+				width: 986px
+				height: 100%
+				display: flex
+				justify-content: space-between
+
+				& > .block
+					width: 228px
+					display: flex
+					flex-direction: column
+
+					& > .preview
+						width: 100%
+						height: 300px
+						display: flex
+						align-items: flex-end
+
+						& > .wrap
+							position: absolute
+							width: 228px
+							height: 300px
+							z-index: 1
+
+							& > img
+								width: 100%
+								height: 100%
+								object-fit: cover
+
+						& > .discount
+							position: relative
+							border-top-right-radius: 10px
+							border-bottom-right-radius: 10px
+							background-color: #AF3735
+							margin-bottom: 25px
+							z-index: 2
+
+							&.hide
+								display: none
+
+							& > .text
+								font-family: "MyriadPro", sans-serif
+								font-weight: 400
+								font-size: 18px
+								color: #fff
+								margin: 2px 8px 1px 5px
+
+					& > .details
+						padding-top: 8px
+						padding-left: 15px
+						padding-bottom: 15px
+						background-color: #fff
+						display: flex
+						flex-direction: column
+						align-items: flex-start
+
+						& > .price
+							display: flex
+							justify-content: flex-start
+							align-items: flex-end
+
+							& > .new
+								font-family: "MyriadPro", sans-serif
+								font-weight: 700
+								font-size: 24px
+
+							& > .old
+								margin-left: 8px
+								font-family: "MyriadPro", sans-serif
+								font-weight: 700
+								font-size: 16px
+								text-decoration-line: line-through
+								color: #555
+
+								&.hide
+									display: none
+
+						& > .title
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 24px
+
+						& > .type
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 16px
+
+		& > .pages
+			margin-top: 25px
+			height: 15px
+			margin-bottom: 25px
+			display: flex
+
+			& > .page
+				width: 15px
+				height: 15px
+				background-color: #9d9d9d
+				border-radius: 50%
+				margin-left: 20px
+
+				&.here
+					background-color: #AF3735
+
+				&:first-child
+					margin-left: 0px
+
+.sec10
+	position: relative
+	width: 100%
+	height: 510px
+	display: flex
+	justify-content: center
+
+	& > .bg
+		position: absolute
+		background-color: #8b413e
+		width: 100%
+		height: 100%
+		z-index: 1
+
+		& > img
+			width: 100%
+			height: 100%
+			opacity: .45
+			object-fit: cover
+
+	& > .cont
+		position: relative
+		z-index: 2
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+
+		& > strong
+			font-family: "MusticaPro", sans-serif
+			font-weight: 600
+			font-size: 60px
+			color: #fff
+
+		& > .brands
+			margin-top: 20px
+			width: 100%
+			height: 350px
+			display: grid
+			grid-column-gap: 50px
+			grid-row-gap: 25px
+			grid-template-areas: none
+			grid-template-columns: 1fr 1fr 1fr 1fr
+
+			& > .block
+				border-radius: 10px
+				padding: 10px 20px
+				background-color: #fff
+
+				& > .wrap
+					width: 100%
+					height: 100%
+					display: flex
+					justify-content: center
+					align-items: center
+
+					& > img
+						width: 100%
+						height: 100%
+						object-fit: cover
+
+.sec12
+	width: 100%
+	background-color: #e1e1e1
+	display: flex
+	justify-content: center
+
+	& > .cont
+		margin-top: 50px
+		margin-bottom: 50px
+		background-color: #AF3735
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		transition: height .3s ease
+
+		& > .partion
+			width: 100%
+			height: 40px
+			overflow: hidden
+			background-color: #fff
+			display: flex
+			justify-content: space-between
+
+			& > .person
+				width: 66.6667%
+				height: 200%
+				display: flex
+				flex-direction: column
+				transition: margin-top .3s ease
+
+				& > .old
+					height: 100%
+					display: flex
+					justify-content: space-between
+
+					& > button
+						position: relative
+						width: 100%
+						height: 100%
+						background-color: #AF3735
+						outline: none
+						border: none
+						cursor: pointer
+
+						& > .bg
+							position: absolute
+							bottom: 0px
+							width: 0%
+							height: 100%
+							background-color: #fff
+							z-index: 1
+							transition: width .3s ease
+
+						&.men
+							& > .bg
+								right: 0px
+
+						&.women
+							& > .bg
+								left: 0px
+						
+						& > .text
+							position: relative
+							height: 100%
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 23px
+							color: #fff
+							z-index: 2
+							transition: color .3s ease
+
+						&.here
+							& > .bg
+								width: 100%
+
+							& > .text
+								color: #000
+
+						&:hover
+							background-color: #BF4745
+
+							& > .bg
+								background-color: #eee
+				& > .child
+					height: 100%
+					display: flex
+					justify-content: space-between
+
+					& > button
+						position: relative
+						width: 100%
+						height: 100%
+						background-color: #AF3735
+						outline: none
+						border: none
+						cursor: pointer
+
+						& > .bg
+							position: absolute
+							bottom: 0px
+							width: 0%
+							height: 100%
+							background-color: #fff
+							z-index: 1
+							transition: width .3s ease
+
+						&.men
+							& > .bg
+								right: 0px
+
+						&.women
+							& > .bg
+								left: 0px
+						
+						& > .text
+							position: relative
+							height: 100%
+							font-family: "MusticaPro", sans-serif
+							font-weight: 600
+							font-size: 23px
+							color: #fff
+							z-index: 2
+							transition: color .3s ease
+
+						&.here
+							& > .bg
+								width: 100%
+
+							& > .text
+								color: #000
+
+						&:hover
+							background-color: #BF4745
+
+							& > .bg
+								background-color: #eee
+
+				&.is-children
+					margin-top: -40px
+
+			& > .children
+				position: relative
+				width: 33.3333%
+				height: 100%
+				background-color: #AF3735
+				outline: none
+				border: none
+				cursor: pointer
+
+				& > .bg
+					position: absolute
+					bottom: 0px
+					left: 0px
+					width: 100%
+					height: 0px
+					background-color: #fff
+					z-index: 1
+					transition: height .3s ease
+				
+				& > .text
+					position: relative
+					height: 100%
+					font-family: "MusticaPro", sans-serif
+					font-weight: 600
+					font-size: 23px
+					color: #fff
+					z-index: 2
+					transition: color .3s ease
+
+				&.here
+					& > .bg
+						height: 100%
+
+					& > .text
+						color: #000
+
+				&:hover
+					background-color: #BF4745
+
+					& > .bg
+						background-color: #eee
+
+		& > hr
+			width: 100%
+			height: 3px
+			background-color: #fff
+			border: none
+
+		& > .wrap
+			width: 100%
+			height: 100%
+			overflow: hidden
+			transition: height .3s ease
+
+			& > .area-gender
+				width: 200%
+				height: auto
+				display: flex
+				transition: margin-left .3s ease, height .3s ease
+
+				& > .area-person
+					width: 100%
+					height: auto
+					display: flex
+					flex-direction: column
+					transition: height .3s ease
+
+					& > .categories
+						width: 100%
+						overflow: hidden
+						display: flex
+						flex-direction: column
+						transition: margin-top .3s ease
+
+						& > .partion
+							width: 100%
+							height: 35px
+							display: flex
+							justify-content: space-between
+
+							& > .sep
+								height: 100%
+								width: 4px
+								background-color: #fff
+
+							& > .type
+								width: 100%
+								height: 100%
+								font-family: "MusticaPro", sans-serif
+								font-weight: 600
+								font-size: 23px
+								color: #fff
+								text-align: center
+
+						& > hr
+							width: 100%
+							min-height: 2px
+							background-color: #fff
+							border: none
+
+							&:first-child
+								min-height: 3px
+
+						& > .list
+							width: 100%
+							display: flex
+							justify-content: space-between
+
+							& > .sep
+								height: auto
+								width: 4px
+								background-color: #fff
+
+							& > .column
+								width: 100%
+
+								& > .row
+									width: calc(100% - 15px)
+									margin-top: -3px
+									padding-left: 15px
+									height: 35px
+									font-family: "MusticaPro", sans-serif
+									font-weight: 600
+									font-size: 17px
+									color: #fff
+									border-bottom: 2px solid #fff
+									display: flex
+									align-items: center
+									cursor: pointer
+
+									&.not
+										border-bottom-width: 0px
+
+									&:hover
+										background-color: #fff1

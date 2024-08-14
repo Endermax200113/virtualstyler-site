@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Виртуальный стилист</title>
+		<meta name="description" content="Web-сайт, помогающий облегчить пользователям выбор нового гардероба">
+		<meta name="keywords" content="Виртуальный, стилист, гардероб, мода, стиль">
+		<meta name="title" content="Виртуальный стилист">
+		<link rel="icon" href="/img/favicon.png">
+		<meta name="og:image" content="/img/preview.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="h">
+			<div class="cont"> 
+				<div class="left"> 
+					<a href="/" class="logo"> 
+						<svg class="img"> 
+							<use xlink:href="/img/@2x/logo.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="right"> 
+					<nav>
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="/pages/catalog.html">Каталог</a></li>
+							<li><a href="/pages/Manicen.html">Манекен</a></li>
+							<li><a href="/pages/cart.html">Корзина</a></li>
+							<li><a href="/pages/profile.html">Профиль</a></li>
+						</ul>
+					</nav>
+			
+					<button onclick="window.open('/php/logout.php', '_self');">
+						<span class="text">Выйти</span>
+					</button>	
+				</div>
+			</div>
+		</header>
+		
+		<header class="h empty"></header>
+
+		<main class="m">
+			<section class="sec12">
+				<div class="cont">
+					<div class="partion">
+						<div class="person">
+							<div class="old">
+								<button id="for-men" type="button" class="men here">
+									<span class="bg"></span>
+									<span class="text">Мужские</span>
+								</button>
+
+								<button id="for-women" type="button" class="women">
+									<span class="bg"></span>
+									<span class="text">Женские</span>
+								</button>
+							</div>
+
+							<div class="child">
+								<button id="for-boy" type="button" class="men here">
+									<span class="bg"></span>
+									<span class="text">Для мальчиков</span>
+								</button>
+
+								<button id="for-girl" type="button" class="women">
+									<span class="bg"></span>
+									<span class="text">Для девочек</span>
+								</button>
+							</div>
+						</div>
+						
+						<button id="for-children" type="button" class="children">
+							<span class="bg"></span>
+							<span class="text">Детские</span>
+						</button>
+					</div>
+
+					<hr>
+
+					<div class="wrap">
+						<div class="area-gender">
+							<div class="area-person men">
+								<div class="categories old">
+									<div class="partion">
+										<div class="type">Одежды</div>
+										<div class="sep"></div>
+										<div class="type">Обуви</div>
+									</div>
+
+									<hr>
+
+									<div class="list">
+										<div class="column">
+											<div class="row">Футболки</div>
+											<div class="row">Рубашки</div>
+											<div class="row">Брюки</div>
+											<div class="row">Верхняя одежда</div>
+											<div class="row">Джинсы</div>
+											<div class="row">Комбинезоны</div>
+											<div class="row">Костюмы</div>
+											<div class="row">Майки</div>
+											<div class="row">Пиджаки</div>
+											<div class="row">Толстовки</div>
+											<div class="row not">Шорты</div>
+										</div>
+
+										<div class="sep"></div>
+
+										<div class="column">
+											<div class="row">Ботинки</div>
+											<div class="row">Кеды</div>
+											<div class="row">Кроссовки</div>
+											<div class="row">Резиновая обувь</div>
+											<div class="row">Сандали</div>
+											<div class="row">Сапоги</div>
+											<div class="row">Туфли</div>
+											<div class="row">Дутики</div>
+											<div class="row">Шлепанцы</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="categories child">
+									<hr>
+
+									<div class="partion">
+										<div class="type">Одежды</div>
+										<div class="sep"></div>
+										<div class="type">Обуви</div>
+									</div>
+
+									<hr>
+
+									<div class="list">
+										<div class="column">
+											<div class="row">Брюки</div>
+											<div class="row">Шорты</div>
+											<div class="row">Верхняя одежда</div>
+											<div class="row">Водолазки</div>
+											<div class="row">Джемперы</div>
+											<div class="row">Джинсы</div>
+											<div class="row">Жилеты</div>
+											<div class="row">Карнавальные костюмы</div>
+											<div class="row">Комбинезоны</div>
+											<div class="row">Костюмы</div>
+											<div class="row">Пиджаки</div>
+											<div class="row">Рубашки</div>
+											<div class="row">Свитшоты</div>
+											<div class="row">Толстовки</div>
+											<div class="row not">Футболки</div>
+										</div>
+
+										<div class="sep"></div>
+
+										<div class="column">
+											<div class="row">Ботинки</div>
+											<div class="row">Дутики</div>
+											<div class="row">Кеды</div>
+											<div class="row">Кроссовки</div>
+											<div class="row">Сандали</div>
+											<div class="row">Сапоги</div>
+											<div class="row">Туфли</div>
+											<div class="row">Шлепанцы</div>
+											<div class="row">Угги</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="area-person women">
+								<div class="categories old">
+									<div class="partion">
+										<div class="type">Одежды</div>
+										<div class="sep"></div>
+										<div class="type">Обуви</div>
+									</div>
+
+									<hr>
+
+									<div class="list">
+										<div class="column">
+											<div class="row">Блузки</div>
+											<div class="row">Брюки</div>
+											<div class="row">Верхняя одежда</div>
+											<div class="row">Кардиганы</div>
+											<div class="row">Джинсы</div>
+											<div class="row">Комбинезоны</div>
+											<div class="row">Костюмы</div>
+											<div class="row">Пиджаки</div>
+											<div class="row">Платья</div>
+											<div class="row">Толстовки</div>
+											<div class="row">Туники</div>
+											<div class="row">Футболки</div>
+											<div class="row">Топы</div>
+											<div class="row">Шорты</div>
+											<div class="row not">Юбки</div>
+										</div>
+
+										<div class="sep"></div>
+
+										<div class="column">
+											<div class="row">Балетки</div>
+											<div class="row">Босоножки</div>
+											<div class="row">Ботинки</div>
+											<div class="row">Кроссовки</div>
+											<div class="row">Кеды</div>
+											<div class="row">Сандали</div>
+											<div class="row">Туфли</div>
+											<div class="row">Дутики</div>
+											<div class="row">Сланцы</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="categories child">
+									<hr>
+
+									<div class="partion">
+										<div class="type">Одежды</div>
+										<div class="sep"></div>
+										<div class="type">Обуви</div>
+									</div>
+
+									<hr>
+
+									<div class="list">
+										<div class="column">
+											<div class="row">Блузки</div>
+											<div class="row">Брюки</div>
+											<div class="row">Шорты</div>
+											<div class="row">Верхняя одежда</div>
+											<div class="row">Водолазки</div>
+											<div class="row">Джемперы</div>
+											<div class="row">Джинсы</div>
+											<div class="row">Жилеты</div>
+											<div class="row">Карнавальные костюмы</div>
+											<div class="row">Комбинезоны</div>
+											<div class="row">Платья</div>
+											<div class="row">Туники</div>
+											<div class="row">Толстовки</div>
+											<div class="row not">Костюмы</div>
+										</div>
+
+										<div class="sep"></div>
+
+										<div class="column">
+											<div class="row">Балетки</div>
+											<div class="row">Туфли</div>
+											<div class="row">Босоножки</div>
+											<div class="row">Ботинки</div>
+											<div class="row">Кеды</div>
+											<div class="row">Кроссовки</div>
+											<div class="row">Сапоги</div>
+											<div class="row">Сланцы</div>
+											<div class="row">Угги</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="f">
+			<div class="cont">
+				<a href="/">
+					<svg>
+						<use xlink:href="/img/@2x/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="content">
+					<div class="left">
+						<h1>Новостные рассылки</h1>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. 
+						</p>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<input type="text" id="email" name="email" placeholder="Введите E-Mail">
+
+							<button type="submit">
+								<span class="text">Подписаться</span>
+							</button>
+						</form>
+
+						<button>
+							<span class="text">Скачать мобильное приложение (Android)</span>
+						</button>
+					</div>
+
+					<div class="right">
+						<h1>Обратная связь</h1>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<div class="first">
+								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+							</div>
+
+							<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+							<div class="last">
+								<input type="text" id="email" name="email" placeholder="E-Mail">
+
+								<button>
+									<span class="text">Отправить</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<strong>&copy; «Виртуальный стилист», 2022</strong>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</body>
+</html>

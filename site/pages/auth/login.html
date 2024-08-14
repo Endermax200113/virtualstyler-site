@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Виртуальный стилист</title>
+		<meta name="description" content="Web-сайт, помогающий облегчить пользователям выбор нового гардероба">
+		<meta name="keywords" content="Виртуальный, стилист, гардероб, мода, стиль">
+		<meta name="title" content="Виртуальный стилист">
+		<link rel="icon" href="/img/favicon.png">
+		<meta name="og:image" content="/img/preview.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+ 		<header class="h">
+			<div class="cont"> 
+				<div class="left"> 
+					<a href="/" class="logo"> 
+						<svg class="img"> 
+							<use xlink:href="/img/@2x/logo.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+
+				<div class="right"> 
+					<nav>
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Товары</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</nav>
+			
+					<button onclick="window.open('/pages/auth/login.html', '_self');" type="button">
+						<span class="text">Войти</span>
+					</button>	
+				</div>
+			</div>
+		</header>
+		
+		<header class="h empty"></header>
+
+		<main>
+			<section class="sec6">
+				<div class="err hide">
+					АШЫБКА!
+				</div>
+
+				<form action="auth.php" id="form-login" class="margin">
+					<strong>Вход</strong>
+
+					<input type="text" name="email" id="email" placeholder="E-Mail">
+					<input type="password" name="password" id="password" placeholder="Пароль">
+
+					<button name="btn-login">
+						<span class="text">Войти</span>
+					</button>
+
+					<a href="/pages/auth/reg.html">У Вас нет аккаунта?</a>
+				</form>
+			</section>
+		</main>
+
+		<footer class="f">
+			<div class="cont">
+				<a href="/">
+					<svg>
+						<use xlink:href="/img/@2x/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="content">
+					<div class="left">
+						<h1>Новостные рассылки</h1>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. 
+						</p>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<input type="text" id="email" name="email" placeholder="Введите E-Mail">
+
+							<button type="submit">
+								<span class="text">Подписаться</span>
+							</button>
+						</form>
+
+						<button>
+							<span class="text">Скачать мобильное приложение (Android)</span>
+						</button>
+					</div>
+
+					<div class="right">
+						<h1>Обратная связь</h1>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<div class="first">
+								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+							</div>
+
+							<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+							<div class="last">
+								<input type="text" id="email" name="email" placeholder="E-Mail">
+
+								<button>
+									<span class="text">Отправить</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<strong>&copy; «Виртуальный стилист», 2022</strong>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/js/scripts.js"></script>
+
+	</body>
+</html>

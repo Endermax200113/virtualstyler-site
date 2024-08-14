@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Виртуальный стилист</title>
+		<meta name="description" content="Web-сайт, помогающий облегчить пользователям выбор нового гардероба">
+		<meta name="keywords" content="Виртуальный, стилист, гардероб, мода, стиль">
+		<meta name="title" content="Виртуальный стилист">
+		<link rel="icon" href="/img/favicon.png">
+		<meta name="og:image" content="/img/preview.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- ШАПКА ДЛЯ АВТОРИЗОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ -->
+		<header class="h">
+			<div class="cont"> 
+				<div class="left"> 
+					<a href="/" class="logo"> 
+						<svg class="img"> 
+							<use xlink:href="/img/@2x/logo.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="right"> 
+					<nav>
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="/pages/catalog.html">Каталог</a></li>
+							<li><a href="/pages/Manicen.html">Манекен</a></li>
+							<li><a href="/pages/cart.html">Корзина</a></li>
+							<li><a href="/pages/profile.html">Профиль</a></li>
+						</ul>
+					</nav>
+			
+					<button onclick="window.open('/php/logout.php', '_self');">
+						<span class="text">Выйти</span>
+					</button>	
+				</div>
+			</div>
+		</header>
+		
+		<header class="h empty"></header>
+
+		<main class="m">
+				<input id="logined" type="text" style="display: none;" placeholder="show">
+
+			<section class="sec7">
+				<div class="cont">
+					<div class="blocks">
+						<div class="block">
+							<div class="wrap">
+								<img src="/img/@2x/sec12-bg.png" alt="">
+							</div>
+
+
+							<div class="details">
+								<strong>Набор одежды LIU JO</strong>
+
+								<div class="down">
+									<div class="discount">Скидка -35%</div>
+									
+									<p>
+										Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вскоре ведущими скатился залетают языком имеет толку снова знаках всеми?
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="block">
+							<div class="wrap">
+								<img src="/img/@2x/sec12-bg.png" alt="">
+							</div>
+
+
+							<div class="details">
+								<strong>Набор одежды LIU JO</strong>
+
+								<div class="down">
+									<div class="discount">Скидка -35%</div>
+									
+									<p>
+										Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вскоре ведущими скатился залетают языком имеет толку снова знаках всеми?
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block">
+							<div class="wrap">
+								<img src="/img/@2x/sec12-bg.png" alt="">
+							</div>
+
+
+							<div class="details">
+								<strong>Набор одежды LIU JO</strong>
+
+								<div class="down">
+									<div class="discount">Скидка -35%</div>
+									
+									<p>
+										Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Вскоре ведущими скатился залетают языком имеет толку снова знаках всеми?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="arrows">
+						<div class="wrap">
+							<div class="left">
+								<svg>
+									<use xlink:href="/img/@2x/arrow-left-black.svg#left"></use>
+								</svg>
+							</div>
+
+							<div class="right">
+								<svg>
+									<use xlink:href="/img/@2x/arrow-right-black.svg#right"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="grad">
+						<div class="left"></div>
+
+						<div class="right"></div>
+					</div>
+
+					<div class="pages">
+						<div class="page here"></div>
+						<div class="page"></div>
+						<div class="page"></div>
+						<div class="page"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec8">
+				<div class="cont">
+					<strong>Популярные товары</strong>
+
+					<div class="products">
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block">
+							<div class="bg">
+								<img src="/img/@2x/sec8-bg.png" alt="">
+							</div>
+
+							<div class="details">
+								<div class="up">
+									<div class="left">
+										<div class="old-price">6990 руб.</div>
+
+										<div class="new-price">3490 руб.</div>
+									</div>
+
+									<div class="discount">
+										<div class="text">-50%</div>
+									</div>
+								</div>
+
+								<div class="down">
+									<div class="title">Кроссовки Adidas Neo (5403-6)</div>
+
+									<p>
+										Новые весенние кроссовки 2022 уже здесь! Успей купить!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec9">
+				<div class="cont">
+					<strong>Рекомендуем</strong>
+
+					<div class="products">
+						<div class="left">
+							<svg>
+								<use xlink:href="/img/@2x/arrow-left-black.svg#left"></use>
+							</svg>
+						</div>
+
+						<div class="center">
+							<div class="block">
+								<div class="preview">
+									<div class="wrap">
+										<img src="/img/@2x/sec9-bg1.png" alt="">
+									</div>
+
+									<div class="discount">
+										<div class="text">-60%</div>
+									</div>
+								</div>
+
+								<div class="details">
+									<div class="price">
+										<div class="new">2 700 &#8381;</div>
+
+										<div class="old">4 500 &#8381;</div>
+									</div>
+
+									<div class="title">AWER</div>
+
+									<div class="type">Брюки</div>
+								</div>
+							</div>
+
+							<div class="block">
+								<div class="preview">
+									<div class="wrap">
+										<img src="/img/@2x/sec9-bg2.png" alt="">
+									</div>
+
+									<div class="discount">
+										<div class="text">-45%</div>
+									</div>
+								</div>
+
+								<div class="details">
+									<div class="price">
+										<div class="new">385 &#8381;</div>
+
+										<div class="old">700 &#8381;</div>
+									</div>
+
+									<div class="title">Юлла</div>
+
+									<div class="type">Водолазка</div>
+								</div>
+							</div>
+							
+							<div class="block">
+								<div class="preview">
+									<div class="wrap">
+										<img src="/img/@2x/sec9-bg3.png" alt="">
+									</div>
+
+									<div class="discount hide"></div>
+								</div>
+
+								<div class="details">
+									<div class="price">
+										<div class="new">3 499 &#8381;</div>
+
+										<div class="old hide"></div>
+									</div>
+
+									<div class="title">PlayToday</div>
+
+									<div class="type">Джинсы</div>
+								</div>
+							</div>
+							
+							<div class="block">
+								<div class="preview">
+									<div class="wrap">
+										<img src="/img/@2x/sec9-bg4.png" alt="">
+									</div>
+
+									<div class="discount hide"></div>
+								</div>
+
+								<div class="details">
+									<div class="price">
+										<div class="new">513 &#8381;</div>
+
+										<div class="old hide"></div>
+									</div>
+
+									<div class="title">VIDANI</div>
+
+									<div class="type">Бейсболка</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="right">
+							<svg>
+								<use xlink:href="/img/@2x/arrow-right-black.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="pages">
+						<div class="page here"></div>
+						<div class="page"></div>
+						<div class="page"></div>
+						<div class="page"></div>
+						<div class="page"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec10">
+				<div class="bg">
+					<img src="/img/@2x/sec10-bg.png" alt="">
+				</div>
+
+				<div class="cont">
+					<strong>Известные бренды</strong>
+
+					<div class="brands">
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand1.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand2.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand3.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand4.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand5.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand6.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand7.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand8.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand9.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand10.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand11.png" alt=""></div>
+						</div>
+
+						<div class="block">
+							<div class="wrap"><img src="/img/@2x/sec10-brand12.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="f">
+			<div class="cont">
+				<a href="/">
+					<svg>
+						<use xlink:href="/img/@2x/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="content">
+					<div class="left">
+						<h1>Новостные рассылки</h1>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. 
+						</p>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<input type="text" id="email" name="email" placeholder="Введите E-Mail">
+
+							<button type="submit">
+								<span class="text">Подписаться</span>
+							</button>
+						</form>
+
+						<button>
+							<span class="text">Скачать мобильное приложение (Android)</span>
+						</button>
+					</div>
+
+					<div class="right">
+						<h1>Обратная связь</h1>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<div class="first">
+								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+							</div>
+
+							<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+							<div class="last">
+								<input type="text" id="email" name="email" placeholder="E-Mail">
+
+								<button>
+									<span class="text">Отправить</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<strong>&copy; «Виртуальный стилист», 2022</strong>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Виртуальный стилист</title>
+		<meta name="description" content="Web-сайт, помогающий облегчить пользователям выбор нового гардероба">
+		<meta name="keywords" content="Виртуальный, стилист, гардероб, мода, стиль">
+		<meta name="title" content="Виртуальный стилист">
+		<link rel="icon" href="/img/favicon.png">
+		<meta name="og:image" content="/img/preview.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/styles.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header class="h video">
+			<div class="cont"> 
+				<div class="left"> 
+					<a href="/" class="logo"> 
+						<svg class="img"> 
+							<use xlink:href="/img/@2x/logo.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="right"> 
+					<nav>
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Товары</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</nav>
+			
+					<button onclick="window.open('/pages/auth/login.html', '_self');">
+						<span class="text">Войти</span>
+					</button>	
+				</div>
+			</div>
+		</header>
+		
+		<header class="h empty video"></header>
+
+		<main class="m">
+			<input id="logined" type="text" style="display: none;" placeholder="hide">
+				
+			<section class="sec1">
+				<div class="bg">
+					<div class="defender"></div>
+
+					<video muted loop autoplay>
+						<source src="/video/sec1_preview.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="cont">
+					<div class="left">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-left.svg#left"></use>
+						</svg>
+					</div>
+
+					<div class="center">
+						<strong>Набор одежды NIKE</strong>
+
+						<div class="bottom">
+							<p>
+								Nike -  американская транснациональная компания, специализирующаяся на спортивной одежде и обуви. Cама компания является правообладателем торговых марок, разрабатывает дизайн продукции и владеет сетью магазинов. Nike является самым дорогим спортивным брендом в мире.
+							</p>
+
+							<div class="pages">
+								<div class="page here"></div>
+								<div class="page"></div>
+								<div class="page"></div>
+								<div class="page"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="right">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-right.svg#right"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec2">
+				<div class="cont">
+					<strong>Почему именно мы?</strong>
+
+					<div class="facts">
+						<div class="block">
+							<div class="ava">
+								<svg class="fact1">
+									<use xlink:href="/img/@2x/sec2-fact1.svg#fact1"></use>
+								</svg>
+							</div>
+
+							<h1>Доставка</h1>
+
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Алфавит своих, приставка текста реторический на берегу пор послушавшись рыбными всеми, предупредила гор все рыбного текстов! Своего вскоре, знаках океана повстречался.
+							</p>
+						</div>
+
+						<div class="block">
+							<div class="ava">
+								<svg class="fact2">
+									<use xlink:href="/img/@2x/sec2-fact2.svg#fact2"></use>
+								</svg>
+							</div>
+
+							<h1>Техподдержка</h1>
+
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Алфавит своих, приставка текста реторический на берегу пор послушавшись рыбными всеми, предупредила гор все рыбного текстов! Своего вскоре, знаках океана повстречался.
+							</p>
+						</div>
+
+						<div class="block">
+							<div class="ava">
+								<svg class="fact3">
+									<use xlink:href="/img/@2x/sec2-fact3.svg#fact3"></use>
+								</svg>
+							</div>
+
+							<h1>Манекен</h1>
+
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Алфавит своих, приставка текста реторический на берегу пор послушавшись рыбными всеми, предупредила гор все рыбного текстов! Своего вскоре, знаках океана повстречался.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec3">
+				<div class="cont">
+					<div class="left">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-left-black.svg#left"></use>
+						</svg>
+					</div>
+
+					<div class="center">
+						<div class="products">
+							<div class="product">
+								<div class="wrap">
+									<img src="/img/@2x/sec3-product1.png" alt="">
+								</div>
+
+								<div class="details">
+									<div class="title">GIANI</div>
+
+									<div class="type">Пальто</div>
+								</div>
+							</div>
+
+							<div class="product">
+								<div class="wrap">
+									<img src="/img/@2x/sec3-product2.png" alt="">
+								</div>
+
+								<div class="details">
+									<div class="title">ADAGIO</div>
+
+									<div class="type">Куртка</div>
+								</div>
+							</div>
+							
+							<div class="product">
+								<div class="wrap">
+									<img src="/img/@2x/sec3-product3.png" alt="">
+								</div>
+
+								<div class="details">
+									<div class="title">ROYALSPIRIT</div>
+
+									<div class="type">Пиджак</div>
+								</div>
+							</div>
+							
+							<div class="product">
+								<div class="wrap">
+									<img src="/img/@2x/sec3-product4.png" alt="">
+								</div>
+
+								<div class="details">
+									<div class="title">LASSIE</div>
+
+									<div class="type">Куртка</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pages">
+							<div class="page here"></div>
+							<div class="page"></div>
+							<div class="page"></div>
+							<div class="page"></div>
+						</div>
+					</div>
+					
+					<div class="right">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-right-black.svg#right"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec4">
+				<div class="bg">
+					<img src="/img/@2x/sec4-bg.png" alt="">
+					<div class="gradient"></div>
+				</div>
+
+				<div class="cont">
+					<div class="left">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-left-small.svg#left"></use>
+						</svg>
+					</div>
+
+					<div class="center">
+						<strong>Отзывы</strong>
+
+						<div class="comments">
+							<div class="block">
+								<div class="ava">
+									<div class="wrap">
+										<img src="/img/@2x/sec4-ava1.png" alt="">
+									</div>
+								</div>
+
+								<h1>Дмитрий Орлов</h1>
+
+								<div class="rates">
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate half">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate null">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+								</div>
+
+								<p>
+									Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные, тексты. Путь, диких? Безорфографичный ему решила, пустился дороге, вопроса свой парадигматическая! Пор имени, буквенных которое возвращайся.
+								</p>
+							</div>
+
+							<div class="block">
+								<div class="ava">
+									<div class="wrap">
+										<img src="/img/@2x/sec4-ava2.png" alt="">
+									</div>
+								</div>
+
+								<h1>Светлана Васнецова</h1>
+
+								<div class="rates">
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate null">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+								</div>
+
+								<p>
+									Далеко-далеко за словесными горами в стране, гласных и согласных, живут рыбные тексты. Щеке силуэт раз последний жизни до, запятых, свое которое свою ручеек, реторический точках инициал, путь? Страна алфавит пунктуация за переулка свою инициал, семантика ручеек великий, ведущими первую меня ему, букв?
+								</p>
+							</div>
+							
+							<div class="block">
+								<div class="ava">
+									<div class="wrap">
+										<img src="/img/@2x/sec4-ava3.png" alt="">
+									</div>
+								</div>
+
+								<h1>Евгений Соколов</h1>
+
+								<div class="rates">
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+									
+									<div class="rate full">
+										<img src="/img/@2x/sec4-rate-full.png" alt="" class="full">
+										<img src="/img/@2x/sec4-rate-half.png" alt="" class="half">
+										<img src="/img/@2x/sec4-rate-null.png" alt="" class="null">
+									</div>
+								</div>
+
+								<p>
+									Далеко-далеко за словесными горами в стране, гласных и согласных, живут рыбные тексты. Щеке силуэт раз последний жизни до, запятых, свое которое свою ручеек, реторический точках инициал, путь? Страна алфавит пунктуация за переулка свою инициал, семантика ручеек великий, ведущими первую меня ему, букв?
+								</p>
+							</div>
+						</div>
+
+						<div class="pages">
+							<div class="page here"></div>
+							<div class="page"></div>
+							<div class="page"></div>
+						</div>
+					</div>
+					
+					<div class="right">
+						<svg>
+							<use xlink:href="/img/@2x/arrow-right-small.svg#right"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="f">
+			<div class="cont">
+				<a href="/">
+					<svg>
+						<use xlink:href="/img/@2x/logo.svg#logo"></use>
+					</svg>
+				</a>
+
+				<div class="content">
+					<div class="left">
+						<h1>Новостные рассылки</h1>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel. 
+						</p>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<input type="text" id="email" name="email" placeholder="Введите E-Mail">
+
+							<button type="submit">
+								<span class="text">Подписаться</span>
+							</button>
+						</form>
+
+						<button>
+							<span class="text">Скачать мобильное приложение (Android)</span>
+						</button>
+					</div>
+
+					<div class="right">
+						<h1>Обратная связь</h1>
+
+						<!-- ССЫЛКИ НЕТ! -->
+						<form action="">
+							<div class="first">
+								<input type="text" id="name" name="name" placeholder="Имя">
+								<input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+							</div>
+
+							<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+
+							<div class="last">
+								<input type="text" id="email" name="email" placeholder="E-Mail">
+
+								<button>
+									<span class="text">Отправить</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<strong>&copy; «Виртуальный стилист», 2022</strong>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</body>
+</html>
